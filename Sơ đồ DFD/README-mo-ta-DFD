@@ -1,0 +1,181 @@
+1.	Sơ đồ ngữ cảnh của hệ thống quản lý tài sản thiết bị:
+Mô tả luồng dữ liệu:
+AMS là Hệ thống Quản lý tài sản, người dùng sẽ có thể truy xuất dữ liệu:
+-	Đối với nhân viên thuộc phòng Hành chính – Nhân sự:	
+o	Nhập, tìm thông tin thiết bị tài sản.
+o	Nhập, tìm, xác nhận thông tin thiết bị tài sản giao.
+o	Khi người mượn trả thiết bị, hệ thống trả thông tin thiết bị tài sản trả.
+o	Nhân viên trong phòng Hành chính – Nhân sự kiểm tra thiết bị và cập nhật trạng thái thiết bị tài sản trả.
+-	Đối với nhân viên:
+o	Tra cứu thông tin tìm kiếm thiết bị tài sản.
+o	Tìm và xem thông tin tình trạng thiết bị tài sản.
+o	Đăng ký, nhận và xem thông tin thiết bị tài sản nhận.
+o	Đăng ký và xem thông tin trả thiết bị tài sản.
+-	Đối với lãnh đạo:
+o	Khi yêu cầu báo cáo, hệ thống xuất ra bản báo cáo dựa theo yêu cầu báo cáo thiết bị tài sản theo dự án, báo cáo thiết bị tài sản theo tình trạng, báo cáo thiết bị tài sản hết khấu hao.
+Đối tượng thao tác gồm:
+-	Nhân viên thuộc phòng Hành chính – Nhân sự: có quyền hành thao tác chỉnh sửa dữ liệu.
+-	Nhân viên.
+-	Lãnh đạo: có quyền hành thao tác chỉnh sửa dữ liệu.
+
+2.	Sơ đồ luồng dữ Liệu cấp 0 (DFD cấp 0):
+ Mô tả luồng dữ liệu:
+Hệ thống có 7 chức năng:
+1.	Chức năng quản lý thông tin thiết bị tài sản.
+2.	Chức năng quản lý bàn giao thiết bị tài sản.
+3.	Chức năng quản lý hoàn trả thiết bị tài sản.
+4.	Chức năng tạo báo cáo thiết bị tài sản của dự án.
+5.	Chức năng tạo báo cáo thiết bị tài sản theo tình trạng.
+6.	Chức năng tạo báo cáo thiết bị tài sản hết giá trị khấu hao.
+7.	Chức năng tìm kiếm.
+Hệ thống gồm 2 dữ liệu:
+-	Dữ liệu thiết bị tài sản: được lấy từ bảng tai_san, bảng thietbi_con trong cơ sỡ dữ liệu.
+-	Dữ liệu giao thiết bị tài sản: được lấy từ bảng bienban_giao, bảng bienbao_tra, trong cơ sỡ dữ liệu.
+Khi các đối tượng thao tác, luồng dữ liệu hệ thống sẽ di chuyển:
+-	1.0. Quản lý thông tin thiết bị tài sản: 
+Phòng Hành chính – Nhân sự đưa thông tin về thiết bị tài sản vào hệ thống, thông tin thiết bị tài sản lưu vào dữ liệu TBTS.
+-	2.0. Quản lý bản giao thiết bị tài sản: 
+Thông tin thiết bị tài sản được nhân viên xem, khi nhân viên đăng ký giao, thông tin giao và thông tin thiết bị tài sản đăng ký giao lưu vào dữ liệu giao TBTS.
+-	3.0. Quản lý hoàn trả thiết bị tài sản: 
+Thông tin thiết bị tài sản được giao sẽ được vào hoàn trả thiết bị, khi nhân viên trả thiết bị, thông tin thiết bị tài sản trả sẽ trả về dữ liệu giao TBTS và phòng Hành chính – Nhân sự, thể hiện nhân viên mượn đó đã trả thiết bị tài sản. Phòng Hành chính – Nhân sự sẽ kiểm tra và đánh giá tình trạng thiết bị, thông tin đánh giá lưu vào hoàn trả thiết bị và lưu vào dữ liệu TBTS.
+-	4.0. Báo cáo thiết bị tài sản của dự án, 5.0. Báo cáo thiết bị tài sản theo tình trạng, 6.0. Báo cáo thiết bị tài sản theo tình trạng:
+Lãnh đạo gửi yêu cầu báo cáo, dữ liệu từ dữ liệu TBTS và dữ liệu giao TBTS sẽ cho hiện kết quả danh sách thiết bị tài sản.
+-	7.0 Tìm kiếm: 
+Nhân viên nhập tìm kiếm thông tin và hệ thống trả về kết quả thông tin thiết bị tài sản và tình trạng dựa vào dữ liệu TBTS.
+
+3.	Sơ đồ luồng dữ Liệu cấp 1 (DFD cấp 1):
+3.1.	Sơ đồ DFD cấp 1 cho chức năng quản lý thông tin thiết bị tài sản:
+Mô tả luồng dữ liệu:
+Trong chức năng quản lý thông tin thiết bị tài sản, phân thành 4 chức năng chính:
+-	1.1. Xem danh sách thiết bị tài sản: 
+Danh sách thiết bị tài sản được lấy từ dữ liệu thiết bị tài sản, danh sách thiết bị tài sản sẽ được phòng Hành chính – Nhân sự xem để thực hiện những thao tác như nhập mới, cập nhật và xóa.
+-	1.2. Thêm mới thiết bị tài sản: 
+Từ danh sách thiết bị tài sản, nhân viên trong phòng Hành chính – Nhân sự có thể thao tác thêm thông tin thiết bị tài sản mới, thông tin thiết bị tài sản mới sẽ được thêm vào dữ liệu thiết bị tài sản.
+-	1.3. Cập nhật thông tin thiết bị tài sản: 
+Từ danh sách thiết bị tài sản, nhân viên trong phòng Hành chính – Nhân sự có thể thao tác cập nhật thông tin thiết bị tài sản, thông tin cập nhật sẽ được cập nhật vào dữ liệu thiết bị tài sản.
+-	1.4. Xóa thông tin thiết bị tài sản: 
+Từ danh sách thiết bị tài sản, nhân viên trong phòng Hành chính – Nhân sự có thể thao tác xóa thông tin thiết bị tài sản, thông tin xóa sẽ được xóa trong dữ liệu thiết bị tài sản.
+Đối tượng thao tác gồm:
+-	Nhân viên thuộc phòng Hành chính – Nhân sự: 
+o	Thao tác xem thông tin thiết bị tài sản.
+o	Thêm thông tin thiết bị tài sản.
+o	Xóa thông tin thiết bị tài sản.
+
+3.2.	Sơ đồ DFD cấp 1 cho chức năng quản lý việc bàn giao thiết bị tài sản:
+Mô tả luồng dữ liệu:
+Trong chức năng quản lý việc bàn giao thiết bị tài sản, phân thành 5 chức năng chính:
+-	2.1. Đăng ký bàn giao thiết bị tài sản: 
+Nhân viên nhập thông tin đăng ký bàn giao thiết bị tài sản cần giao từ dữ liệu TBTS, thông tin giao sẽ được nhập vào dữ liệu giao TBTS.
+-	2.2. Xem biên bản giao: 
+Từ dữ liệu giao TBTS, thông tin giao được gửi đến xem biên bản giao, phòng Hành chính – Nhân sự sẽ xem được tất cả biên bản bàn giao; đối với nhân viên, chỉ xem được biên bản mình đăng ký, nếu nhân viên thao tác hủy yêu cầu vào xem biên bản giao, thông tin hủy giao được gửi đến dữ liệu giao TBTS, thông tin giao sẽ được cập nhật lại.
+-	2.3. Xác nhận yêu cầu: 
+Sau khi phòng Hành chính – Nhân sự xem biên bản bàn giao được đăng ký và xác nhận yêu cầu bàn giao, hệ thống sẽ gửi thông tin xác nhận vào dữ liệu giao TBTS, thông tin giao sẽ được cập nhật lại.
+-	2.4. Bàn giao thiết bị tài sản: 
+Sau khi xác nhận yêu cầu, nhân viên phòng Hành chính – Nhân sự sẽ bàn giao thiết bị tài sản cho nhân viên và cập nhật thông tin cập nhật số lượng thiết bị tài sản vào dữ liệu TBTS.
+-	2.5. Xác nhận đã giao: 
+Sau khi nhân viên đã nhận thiết bị tài sản, nhân viên sẽ gửi thông tin nhận vào xác nhận đã giao và thông tin nhận sẽ được truyền đến dữ liệu giao TBTS, thông tin giao sẽ được cập nhật lại.
+Đối tượng thao tác gồm:
+-	Nhân viên thuộc phòng Hành chính – Nhân sự: 
+o	Thao tác xem tất cả biên bản giao.
+o	Thao tác xác nhận yêu cầu.
+o	Bàn giao thiết bị tài sản cho nhân viên.
+-	Nhân viên:
+o	Thao tác xem biên bản giao được đăng ký, có thể thao tác hủy giao.
+o	Thao tác xác nhận đã giao.
+
+3.3.	Sơ đồ DFD cấp 1 cho chức năng quản lý việc giao nhận hoàn trả thiết bị tài sản:
+Mô tả luồng dữ liệu:
+Trong chức năng quản lý việc giao nhận hoàn trả thiết bị tài sản, phân thành 6 chức năng chính:
+-	3.1. Đăng ký hoàn trả thiết bị tài sản: 
+Nhân viên nhập thông tin đăng ký hoàn trả thiết bị tài sản cần trả từ dữ liệu giao TBTS, thông tin trả sẽ được nhập vào dữ liệu giao TBTS.
+-	3.2. Xem biên bản trả: 
+Từ dữ liệu giao TBTS, thông tin trả được gửi đến xem biên bản trả, phòng Hành chính – Nhân sự sẽ xem được tất cả biên bản hoàn trả; đối với nhân viên, chỉ xem được biên bản mình đăng ký, nếu nhân viên thao tác hủy yêu cầu vào xem biên bản, thông tin hủy trả được gửi đến dữ liệu giao TBTS, thông tin trả sẽ được cập nhật lại.
+-	3.3. Xác nhận: 
+Phòng Hành chính – Nhân sự sẽ xem biên bản hoàn trả được đăng ký và xác nhận yêu cầu hoàn trả, hệ thống sẽ gửi thông tin xác nhận vào dữ liệu giao TBTS, thông tin trả sẽ được cập nhật lại.
+-	3.4. Thu hồi thiết bị tài sản: 
+Sau khi xác nhận yêu cầu, nhân viên phòng Hành chính – Nhân sự sẽ đến thu hồi thiết bị tài sản của nhân viên. 
+-	3.5. Xác nhận đã thu hồi: 
+Sau khi nhân viên phòng Hành chính – Nhân sự đã thu hồi thiết bị tài sản, sẽ gửi thông tin nhận vào xác nhận đã thu hồi và thông tin nhận sẽ được truyền đến dữ liệu giao TBTS, thông tin trả sẽ được cập nhật lại.
+-	3.6. Kiểm tra và cập nhật tình trạng TBTS:
+Sau khi hoàn tất thu hồi, nhân viên phòng Hành chính – Nhân sự kiểm trả tình trạng thiết bị và gửi thông tin cập số lượng và tình trạng thiết bị tài sản đến dữ liệu TBTS.
+Đối tượng thao tác gồm:
+-	Nhân viên thuộc phòng Hành chính – Nhân sự: 
+o	Thao tác xem tất cả biên bản trả.
+o	Thao tác xác nhận yêu cầu.
+o	Thu hồi thiết bị tài sản cảu nhân viên.
+o	Thao tác xác nhận đã thu hồi.
+o	Thao tác kiểm tra và cập nhật tình trạng thiết bị tài sản.
+-	Nhân viên:
+o	Thao tác xem biên hoàn trả được đăng ký, có thể thao tác hủy trả.
+
+3.4.	Sơ đồ DFD cấp 1 cho chức năng thống kê báo cáo danh sách tài sản thiết bị theo dự án:
+Mô tả luồng dữ liệu:
+Trong chức năng thống kê báo cáo danh sách tài sản thiết bị theo dự án, phân thành 3 chức năng chính:
+-	4.1. Nhập yêu cầu: 
+Lãnh đạo nhập yêu báo cáo.
+-	4.2. Chọn dự án: 
+Lãnh đạo chọn dự án cần thống kê.
+-	4.3. Hiện report (báo cáo):
+Từ yêu cầu chọn dự án, hệ thống hiện báo cáo (report), được lấy dữ liệu từ dữ liệu giao TBTS và dữ liệu TBTS.
+Đối tượng thao tác gồm:
+-	Lãnh đạo:
+o	Nhập yêu cầu.
+o	Chọn dự án cần thống kê.
+o	Xem báo cáo.
+
+3.5.	Sơ đồ DFD cấp 1 cho chức năng thống kê báo cáo danh sách tài sản thiết bị theo tình trạng:
+Mô tả luồng dữ liệu:
+Trong chức năng thống kê báo cáo danh sách tài sản thiết bị theo tình trạng, phân thành 3 chức năng chính:
+-	5.1. Nhập yêu cầu: 
+Lãnh đạo nhập yêu báo cáo.
+-	5.2. Chọn tình trạng TBTS: 
+Lãnh đạo chọn tình trạng thiết bị tài sản cần thống kê.
+-	5.3. Hiện report (báo cáo):
+Từ yêu cầu chọn tình trạng thiết bị tài sản, hệ thống hiện báo cáo (report), được lấy dữ liệu từ dữ liệu giao TBTS và dữ liệu TBTS.
+Đối tượng thao tác gồm:
+-	Lãnh đạo: Nhập yêu cầu.
+o	Chọn tình trạng thiết bị tài sản cần thống kê.
+o	Xem báo cáo.
+
+3.6.	Sơ đồ DFD cấp 1 cho chức năng thống kê báo cáo danh sách tài sản thiết bị hết giá trị khấu hao:
+Mô tả luồng dữ liệu:
+Trong chức năng thống kê báo cáo danh sách tài sản thiết bị hết giá trị khấu hao, phân thành 2 chức năng chính:
+-	6.1. Nhập yêu cầu: 
+Lãnh đạo nhập yêu báo cáo.
+-	6.2. Hiện report (báo cáo):
+Từ yêu cầu chọn tình trạng thiết bị tài sản, hệ thống hiện báo cáo (report), được lấy dữ liệu từ dữ liệu giao TBTS và dữ liệu TBTS.
+Đối tượng thao tác gồm:
+-	Lãnh đạo:
+o	Nhập yêu cầu.
+o	Xem báo cáo.
+
+3.7.	Sơ đồ DFD cấp 1 cho chức năng tra tìm thông tin và tình trạng của thiết bị: 
+Mô tả luồng dữ liệu:
+Trong chức năng tra tìm thông tin và tình trạng của thiết bị, phân thành 3 chức năng chính:
+-	7.1. Tìm kiếm: 
+Nhân viên nhập từ khóa của tên thiết bị tài sản, tình trạng thiết bị.
+-	7.2. Lọc: 
+Nhân viên chọn điều kiện lọc để lọc thông tin thiết bị tài sản, tình trạng.
+-	7.3. Hiện kết quả: 
+Từ yêu cầu tìm kiếm hoặc yêu cầu lọc, hệ thống hiện kết quả, được lấy dữ liệu từ dữ liệu giao TBTS và dữ liệu TBTS.
+Đối tượng thao tác gồm:
+-	Lãnh đạo:
+o	Nhập từ khóa tìm kiếm.
+o	Chọn điều kiện lọc.
+o	Xem kết quả tìm kiếm.
+
+4.	Sơ đồ DFD cấp 2:
+4.1.	Sơ đồ DFD cấp 2 cho chức năng quản lý thông tin thiết bị tài sản:
+ Chức năng 1.1. Xem danh sách TBTS phân rã thêm chức năng 1.1.1. Xem thông tin chi tiết, thông tin chi tiết của thiết bị được lấy từ dữ liệu TBTS.
+4.2. Sơ đồ DFD cấp 2 cho chức năng quản lý việc bàn giao thiết bị tài sản:
+- Chức năng 2.1. Đăng ký bàn giao thiết bị tài sản phân rã thêm chức năng:
+o	2.1.1. Đăng ký bàn giao TBTS: điền thông tin bàn giao.
+o	2.1.2. Danh sách thêm TBTS: để chọn thiết bị tài sản cần giao.
+o	2.1.3. Gửi yêu cầu: hoàn tất việc đăng ký.
+- Chức năng 2.3. Xác nhận yêu cầu phân rã thêm chức năng:
+o	2.3.1. Xác nhận hủy: khi nhân viên yêu cầu hủy, nhân viên có thể xác nhận yêu cầu hủy và không giao thiết bị tài sản.
+o	2.3.2. Xác nhận bàn giao: nhân viên xác nhận biên bản giao và chuẩn bị thiết bị tài sản để giao.
+4.3.	Sơ đồ DFD cấp 2 cho chức năng quản lý việc giao nhận hoàn trả thiết bị tài sản:
+-	Chức năng 3.3. Xác nhận yêu cầu phân rã thêm chức năng:
+o	3.3.1. Xác nhận hủy: khi nhân viên yêu cầu hủy, nhân viên có thể xác nhận yêu cầu hủy và không thu hồi thiết bị tài sản.
+o	3.3.2. Xác nhận trả: nhân viên xác nhận biên bản trả và chuẩn bị để thu hồi thiết bị tài sản.
