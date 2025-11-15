@@ -1,0 +1,440 @@
+GIAO DIỆN NGƯỜI DÙNG:
+
+1.1.	Quy trình hệ thống hệ thống thông tin:
+Người dùng đăng nhập tài khoản, mỗi tài khoản của mỗi người là riêng biệt. Sau khi đăng nhập, sẽ được đưa đến giao diện Trang chủ. Trong Trang chủ có 4 trang con:
+1.	Thông tin TBTS: có 3 trang con gồm: 
+-	Danh sách TBTS, trong Danh sách TBTS có trang con Thông tin chi tiết, là trang thông tin chi tiết của thiết bị náo đó.
+-	Thêm mới TBTS (tài khoản có thầm quyền truy cập).
+-	Cập nhật thông tin TBTS (tài khoản có thầm quyền truy cập).
+2.	Bàn giao TBTS: có 3 trang con gồm: 
+-	Đăng ký bàn giao.
+-	Xác nhận bàn giao (tài khoản có thầm quyền truy cập).
+-	Biên bản bàn giao.
+3.	Bàn giao TBTS: có 3 trang con gồm:
+-	Đăng ký hoàn trả.
+-	Xác nhận hoàn trả (tài khoản có thầm quyền truy cập).
+-	Biên bản hoàn trả.
+4.	Báo cáo (tài khoản có thầm quyền truy cập): có 3 trang con gồm: 
+-	Danh sách thiết bị theo dự án.
+-	Danh sách thiết bị theo tình trạng.
+-	Danh sách thiết bị hết khấu hao.
+
+1.2.	Tính năng chung trong hệ thống:
+1.	Thanh Menu (navigation):
+-	Vùng chứa các điều hướng đến với các trang con khác.
+-	Gồm Trang chủ, Thông tin TBTS, Bàn giao TBTS, Hoàn trả TBTS, Báo cáo.
+-	Nút bên cạnh để thu nhỏ thanh Menu, mở rộng giao diện hệ thống.
+2.	Vùng thao tác:
+Vùng thao tác gồm: 
+-	Làm mới: làm mới trang đang truy cập.
+-	Hỗ trợ: đưa ra giải pháp có trong hệ thống.
+-	Cài đặt: cài đặt giao diện tùy chỉnh.
+-	Xem thông tin cá nhân.
+-	Đăng xuất hệ thống: thoát khỏi hệ thống.
+3.	Chức năng thanh tìm kiếm:
+Tìm kiếm từ khóa của thiết bị, tình trạng thiết bị trong trang Danh sách TBTS, trang Danh sách thiết bị thêm (trang con của Đăng ký giao).
+Tìm kiếm từ khóa của thiết bị hoặc mã biên bản giao, mã dự án trong Biên bản bàn giao.
+Tìm kiếm từ khóa của thiết bị hoặc mã biên bản trả, mã dự án trong Biên bản hoàn trả.
+Thao tác: để hiện kết quả, nhấp kính lúp kế bên, hoặc thao tác nhấn phím [ENTER] trên bàn phím.
+4.	Tính năng lọc và điều hướng:
+-	1: Kết quả hiển thị: hiển thị số kết quả trùng với yêu cầu lọc, tìm kiếm.
+-	2: Điều hướng phân trang: chọn đến số trang trong danh sách, di chuyển đến trang trước, di chuyển đến trang sau.
+-	3: Từ ngày – đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để lọc yêu cầu thiết bị tài sản theo khoảng thời gian ngày mua, hoặc giới hạn thời gian giao và thời gian trả.
+-	4:  Bộ lọc: Lọc các thuộc tính có trong bộ lọc theo từng trang, để giới hạn kết quả tìm kiếm theo thuộc tính đó.
+5.	Tính năng lựa chọn:
+Lựa chọn 1 trong những lựa chọn để tìm cụ thể những kết quả mong muốn.
+6.	Tính năng sắp xếp thứ tự trong danh sách:
+Sắp xếp dữ liệu theo thứ tự từ bé đến lớn hoặc từ lớn đến bé theo thứ tự ưu tiên của ký tự đầu từ Con số đến Chữ cái.
+7.	Tính năng lưu trữ:
+Tính năng lưu trữ để lưu dữ liệu đang nhập, khi chưa xác nhận thêm mới, tính năng có thể tự động kích hoạt khi rời khỏi trang nhưng chưa thao tác. Nội dung đã điền trước đã sẽ được nhập lại. 
+Tính năng xuất hiện trong những biểu mẫu đăng ký, thêm mới, cập nhật.
+
+1.3.	Đăng nhập tài khoản:
+Mô tả giao diện: 
+Đăng nhập tài khoản là nơi để người dùng đăng nhập vào hệ thống. Tài khoản của mỗi người dùng là khác nhau. 
+Thông tin về tên đăng nhập và mật khẩu được lấy từ bảng tai_khoan trong cơ sỡ dữ liệu.
+Giao diện gồm:
+1.	Khung đăng nhập:
+-	Gồm tên đăng nhập và mật khẩu.
+-	Người dùng gõ tên đăng nhập và mật khẩu của mình.
+2.	Ghi nhớ đăng nhập:
+Sau khi được chọn, tên đăng nhập và mật khẩu được điền tự động ở những lần tiếp theo trên cùng trình duyệt.
+3.	Đăng nhập:	
+Đăng nhập vào hệ thống.
+Trải nghiệm đăng nhập:
+-	Hộp thoại đăng nhập: 
+Tên đăng nhập thao tác [TAB] trên bàn phím di chuyển xuống Mật khẩu, thao tác [TAB] trên bàn phím di chuyển đến chọn Ghi nhớ đăng nhập. Thao tác [ENTER] trên bàn phím để đăng nhập vào hệ thống.
+-	Nếu nhập đúng thông tin thì vào được hệ thống.
+-	Nếu nhập sai thì sẽ có thông báo lỗi nhắc bạn kiểm tra lại thông tin.
+
+1.4.	Giao diện Trang chủ:
+Mô tả giao diện:
+Menu của hệ thống là nơi cho người dùng cái nhìn tổng quát về hiện thống. 
+Vùng nội dung thống kê được lấy dữ liệu từ dữ liệu TBTS và dữ liệu giao TBTS.
+Giao diện gồm:
+1.	Vùng nội dung Thống kê:
+Vùng thống kê tình hình sử dụng thiết bị tài sản gồm:
+-	Tình trạng sử dụng thiết bị (đang sử dụng và còn lại):
+Thống kê tình trạng thiết bị đang sử dụng trên tổng số, thể hiện bằng biểu đồ tròn, tính theo tỉ lệ phần trăm. 
+-	Tổng thiết bị đang sử dụng (theo phòng ban):
+Thống kê tình trạng thiết bị đang sử dụng theo phòng ban, thể hiện bằng biểu đồ tròn, tính theo tỉ lệ phần trăm.
+-	Số lượng thiết bị sử dụng (theo từng thiết bị):
+Thống kê số lượng sử dụng của từng thiết bị, thể hiện bằng biểu đồ tròn, tính theo tỉ lệ phần trăm. 
+2.	Thanh thông báo:
+-	Danh sách những thông báo được nhận, gồm tiêu đề và ngày gửi.
+
+1.5.	Quản lý thông tin thiết bị tài sản:
+1.5.1.	Danh sách thiết bị tài sản:
+Mô tả giao diện:
+	Danh sách TBTS thể hiện danh sách tất cả các thiết bị có trong hệ thống. Về tính năng, người dùng có thể sử dụng tìm kiếm hoặc chọn ngày hoặc sử dụng bộ lọc để giới hạn kết quả hiện ra danh sách thiết bị cần tìm.
+Danh sách TBTS được lấy dữ liệu từ dữ liệu TBTS.
+Giao diện gồm:
+1.	Tính năng bộ lọc:
+Lọc thông tin theo tình trạng thiết bị (Mới, Tốt, Hư hỏng), theo loại thiết bị (Máy tính để bàn, Ổ cứng, Laptop).
+2.	Tính năng xóa:
+Xóa thiết bị tài sản, thao tác và chọn thiết bị muốn xóa.
+3.	Tình năng thêm:
+Thêm thiết bị tài sản mới, khi nhấp vào sẽ đến trang Thêm mới TBTS.
+4.	Vùng thể hiện danh sách các thiết bị:
+Trong vùng thể hiện danh sách các thiết bị sẽ gồm có: 
+1.	Cột Mã tài sản: khi thao tác dẫn đến trang Thông tin chi tiết.
+2.	Cột Tên tài sản: khi thao tác dẫn đến trang Thông tin chi tiết.
+3.	Cột Loại thiết bị.
+4.	Cột Chi phí.
+5.	Cột Ngày mua. 
+6.	Cột Số lượng.
+7.	Cột Tình trạng.
+8.	Cột thao tác Chỉnh sửa: Dẫn đến Trang Cập nhật thông tin TBTS để chỉnh sửa thông tin thiết bị tài sản.
+
+1.5.2.	Thông tin chi tiết:
+Mô tả giao diện:
+	Trang Thông tin chi tiết thể hiện những thông tin cụ thể của thiết bị được chọn từ Danh sách TBTS, trang Thông tin chi tiết không hiện trong thanh Menu trong mục Thông tin TBTS. Trang Thông tin chi tiết được lấy từ dữ liệu TBTS.
+Giao diện gồm:
+Thông tin chi tiết của mỗi thiết bị sẽ bao gồm:
+-	Tên thiết bị.
+-	Mã thiết bị.
+-	Ngày mua.
+-	Thời gian khấu hao.
+-	Chi phí.
+-	Số lượng.
+-	Tình trạng.
+-	Linh kiện của thiết bị nếu có, gồm mã thiết bị con, tên thiết bị con.
+-	Mô tả thiết bị.
+-	Hướng dẫn sử dụng.
+
+1.5.3.	Biểu mẫu thêm mới thiết bị tài sản:
+Mô tả giao diện:
+	Thêm mới TBTS là giao diện để thêm thiết bị tài sản mới. Trang có thể được chọn từ thanh Menu trong mục Thông tin TBTS, đường dẫn đến từ tính năng Thêm trong trang Danh sách TBTS. Chỉ có những tài khoản có thẩm quyền để truy cập và tương tác.
+	Sau khi thêm mới, dữ liệu thêm mới sẽ được cập nhật vào dữ liệu TBTS.
+Giao diện gồm:
+1.	Vùng nhập thông tin:
+-	Ngày nhập, Nhân viên nhập: được nhập trực tiếp từ hệ thống vào ngày được thêm và tài khoản đăng nhập.
+-	Mã thiết bị, Tên thiết bị: mã, tên thiết bị mới, bắt buộc cần điền khi thực hiện thêm mới.
+-	Chi phí: Điền số tiền có đơn vị tiền tệ là VND.
+-	Ngày mua, Thời gian khấu hao: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch.
+-	Số lượng: số lượng thiết bị thêm.
+-	Tình trạng: 
+o	Ô đầu tiên: Lựa chọn 1 trong 3 lựa chọn: Mới / Tốt / Hư hỏng
+o	Ô thứ 2: Nếu tình trạng mỗi thiết bị khác nhau, nhập số lượng và tình trạng.
+-	Là thiết bị con: 
+o	Nếu là thiết bị con thì điền mã thiết bị chính, hệ thống đưa ra mã thiết bị và tên thiết bị.
+o	Nếu không là thiết bị con, lựa chọn không là thiết bị con.
+-	Mô tả: Mô tả thiết bị.
+-	Hướng dẫn sử dụng: Hướng dẫn sử dụng thiết bị.
+-	Thêm: tính năng tạo 1 biểu mẫu điền thiết bị thêm tương tự trong cùng 1 trang.
+2.	Thao tác xác nhận:
+	Gồm 2 tính năng: Làm mới và Xác nhận.
+-	Làm mới: Xóa dữ liệu đã nhập.
+-	Xác nhận: Hoàn tất việc thêm thiết bị mới.
+
+1.5.4.	Biểu mẫu cập nhật thiết bị tài sản:
+ Mô tả giao diện:
+Cập nhật thông tin TBTS là giao diện để cập nhật thông tin thiết bị tài sản hoặc xóa thiết bị. Trang có thể được chọn từ thanh Menu trong mục Thông tin TBTS, đường dẫn đến từ tính năng Chỉnh sửa trong trang Danh sách TBTS, đường dẫn từ tính năng Chỉnh sửa trong trang Thông tin chi tiết. Chỉ có những tài khoản có thẩm quyền để truy cập và tương tác.
+	Sau khi cập nhật, dữ liệu thêm mới sẽ được cập nhật vào dữ liệu TBTS.
+Giao diện gồm:
+1.	Vùng nhập thông tin:
+-	Hiển thị thiết bị đang cập nhật và nội dung cũ của thiết bị đó.
+-	Ngày nhập, Nhân viên nhập: được nhập trực tiếp từ hệ thống vào ngày được thêm và tài khoản đăng nhập.
+-	Mã thiết bị, Tên thiết bị: mã được ký hiệu đầu là TB-, tên thiết bị mới, bắt buộc cần điền.
+-	Chi phí: số tiền có đơn vị tiền tệ là VND.
+-	Ngày mua, Thời gian khấu hao: ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch.
+-	Số lượng: số lượng thiết bị thêm.
+-	Tình trạng: 
+o	Ô đầu tiên: Lựa chọn 1 trong 3 lựa chọn: Mới / Tốt / Hư hỏng
+o	Ô thứ 2: Nếu tình trạng mỗi thiết bị khác nhau, nhập số lượng và tình trạng.
+-	Là thiết bị con: 
+o	Nếu là thiết bị con thì điền mã thiết bị chính, mã được ký hiệu đầu là TB-, hệ thống đưa ra mã thiết bị - tên thiết bị tương ứng với mã thiết bị.
+o	Nếu không là thiết bị con, lựa chọn không là thiết bị con.
+-	Mô tả: Mô tả thiết bị.
+-	Hướng dẫn sử dụng: Hướng dẫn sử dụng thiết bị.
+2.	Thao tác xác nhận:
+	Gồm 3 tính năng: Hủy, Xác nhận, Xóa thiết bị.
+-	Hủy: Hủy dữ liệu đã nhập, không thay đổi nội dung cũ của thiết bị.
+-	Xác nhận: Hoàn tất việc cập nhật thiết bị, thay đổi nội dung cũ của thiết bị thành nội dung vừa cập nhật.
+-	Xóa thiết bị: Xóa dữ liệu về thiết bị đang cập nhật.
+
+1.6.	Quản lý bàn giao thiết bị tài sản:
+1.6.1.	Biểu mẫu đăng ký bàn giao:
+Mô tả giao diện:
+Đăng ký bàn giao thiết bị tài sản là giao diện để đăng ký thiết bị tài sản bàn giao. Trang có thể được chọn từ thanh Menu trong mục Bàn giao TBTS.
+Sau khi đăng ký, thông tin giao sẽ được lưu trong dữ liệu giao TBTS.
+Giao diện gồm:
+1.	Vùng nhập thông tin:
+-	Ngày nhập, Nhân viên nhập: được nhập trực tiếp từ hệ thống vào ngày được thêm và tài khoản đăng nhập.
+-	Ngày bản giao và giờ bàn giao: Điền ngày, tháng, năm cần bàn giao theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch; điền giờ bàn giao mong muốn.
+-	Mã dự án và Tên dự án: nhập mã dự án, được ký hiệu đầu là DA-, hệ thống hiện tên dự án tương ứng với mã dự án.
+-	Thiết bị bàn giao: 
+o	Thao tác “Thêm” dẫn đến Danh sách TBTS thêm và chọn thiết bị cần giao và “Xác nhận”, hệ thống quay lại Đăng ký bàn giao, và thao tác điều chỉnh “Số lượng”cần giao.
+2.	Thao tác xác nhận:
+	Gồm 2 tính năng: Hủy, Gửi yêu cầu
+-	Hủy: Hủy yêu cầu đăng ký bàn giao.
+-	Gửi yêu cầu: Hoàn tất việc đăng ký bàn giao thiết bị tài sản, thông báo hoàn tất và có thể in biên bản nếu muốn.
+
+1.6.2.	Giao diện xác nhận bàn giao:
+Mô tả giao diện:
+	Xác nhận bàn giao là giao diện chỉ có nhân viên Phòng Hành chính – nhân sự xác nhận việc đăng ký bàn giao thiết bị tài sản thành công. Trang có thể được chọn từ thanh Menu trong mục Bàn giao TBTS, nhưng bị khóa đối với tài khoản nhân viên thuộc phòng ban khác.
+	Sau khi biên bản giao được xác nhận, thông tin xác nhận được lưu vào dữ liệu giao TBTS, và người đăng ký có thể xem trạng thái biên bản được xác nhận trong mục Biên bản bàn giao.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của mã biên bản giao, mã dự án, thiết bị, tình trạng cần tìm kiếm trong Xác nhận bàn giao.
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Thanh lựa chọn trạng thái: Lọc các biên bản bàn giao chưa xác nhận, chưa giao, đã xử lý.
+-	Từ ngày – đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để lọc thiết bị tài sản theo khoảng thời gian biên bản bàn giao được đăng ký.
+-	Bộ lọc: Lọc theo trạng thái của biên bản giao “Đang yêu cầu”, “Đã nhận”, “Đã hủy”.
+-	Giao hàng loạt: Xác nhận yêu cầu của mọi biên bản chưa xác nhận và chuẩn bị giao.
+3.	Vùng danh sách các biên bản: 
+Danh sách các biên bản gồm:
+1.	Cột Mã biên bản giao (BBG).
+2.	Cột Mã dự án.
+3.	Cột Nhân viên đăng ký.
+4.	Cột Ngày bàn giao.
+5.	Cột Thiết bị và số lượng bàn giao.
+6.	Cột Trạng thái.
+7.	Cột Thao tác:
+-	Chưa xác nhận: thông báo lựa chọn xác nhận yêu cầu.
+-	Giao: thông báo xác nhận hàng đã đóng góp và giao.
+-	In phiếu giao: xem trước phiếu giao dưới dạng PNG.
+-	Đã xử lý: xem chi tiết thông tin bàn giao.
+
+1.6.3.	Giao diện Biên bản bàn giao
+1.6.3.1.	Người dùng là nhân viên
+Mô tả giao diện:
+	Giao diện Biên bản bàn giao tài sản đối với người dùng là nhân viên là giao diện cho phép theo dõi trạng thái biên bản đã được gửi yêu cầu. Trang có thể được chọn từ thanh Menu trong mục Bàn giao TBTS.
+	Trang được lấy dữ liệu từ dữ liệu giao TBTS.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của mã biên bản giao, mã dự án, thiết bị, tình trạng cần tìm kiếm trong Biên bản bàn giao.
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Thanh lựa chọn trạng thái: Lọc các biên bản bàn giao chưa xác nhận, chưa giao, đã xử lý.
+-	Từ ngày – đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để lọc thiết bị tài sản theo khoảng thời gian biên bản bàn giao được đăng ký.
+3.	Vùng danh sách các biên bản: 
+Danh sách các biên bản gồm:
+-	Cột Mã biên bản giao
+-	Cột Mã dự án
+-	Cột Ngày bàn giao
+-	Cột Thiết bị và số lượng bàn giao
+-	Cột Trạng thái
+-	Cột Thao tác:
+o	Nhấp vào In phiếu giao: xem trước Hình ảnh dưới dạng PNG.
+o	Nhấp vào Hủy yêu cầu: Gửi yêu cầu hủy giao.  
+o	Nhấp vào Đã nhận: Thông báo cho phía người gửi thiết bị đã được nhận.
+
+1.6.3.2.	Người dùng là Admin (Người quản trị hệ thống) hoặc nhân viên bộ phận Hành chính – nhân sự
+Mô tả giao diện:
+	Giao diện Biên bản bàn giao tài sản đối với người dùng là người quản trị hệ thống) hoặc nhân viên bộ phận Hành chính – nhân sự, giao diện cho phép theo dõi tất cả biên bản đã được gửi yêu cầu. Trang có thể được chọn từ thanh Menu trong mục Bàn giao TBTS.
+	Trang được lấy dữ liệu từ dữ liệu giao TBTS.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của mã biên bản giao, mã dự án, thiết bị, tình trạng cần tìm kiếm trong Biên bản bàn giao.
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Thanh lựa chọn trạng thái: Lọc các biên bản bàn giao chưa xác nhận, chưa giao, đã xử lý.
+-	Từ ngày – đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để lọc thiết bị tài sản theo khoảng thời gian biên bản bàn giao được đăng ký.
+3.	Vùng danh sách các biên bản: 
+Danh sách các biên bản gồm:
+-	Cột Mã biên bản giao (BBG)
+-	Cột Mã dự án
+-	Cột Nhân viên đăng ký
+-	Cột Ngày bàn giao
+-	Cột Thiết bị và số lượng bàn giao
+-	Cột Trạng thái
+-	Cột Nhân viên giao
+
+1.7.	Quản lý hoàn trả thiết bị tài sản
+1.7.1.	Biểu mẫu đăng ký hoàn trả
+Mô tả giao diện:
+	Đăng ký hoàn trả thiết bị tài sản là giao diện để đăng ký thiết bị tài sản cần hoàn trả. Trang có thể được chọn từ thanh Menu trong mục Hoàn trả TBTS.
+	Sau khi đăng ký hoàn trả, dữ liệu được lưu trong dữ liệu giao TBTS.
+Giao diện gồm:
+1.	Vùng nhập thông tin:
+-	Ngày nhập, Nhân viên nhập: được nhập trực tiếp từ hệ thống vào ngày được thêm và tài khoản đăng nhập.
+-	Ngày hoàn trả và giờ hoàn trả: Điền ngày, tháng, năm cần hoàn trả theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch; điền giờ hoàn trả mong muốn.
+-	Mã dự án và Tên dự án: nhập mã dự án, được ký hiệu đầu là DA-, hệ thống hiện tên dự án tương ứng với mã dự án.
+-	Thiết bị hoàn trả: Từ biên bản giao trước đó và thông tin dự án, danh sách thiết bị đang sử dụng sẽ hiện ra, lựa chọn thiết bị cần hoàn trả và điều chỉnh số lượng hoàn trả. Thông tin thiết bị hoàn trả được lấy dữ liệu từ dữ liệu giao TBTS.
+2.	Thao tác xác nhận:
+	Gồm 2 tính năng: Hủy, Gửi yêu cầu
+-	Hủy: Hủy yêu cầu đăng ký hoàn trả.
+-	Gửi yêu cầu: Hoàn tất việc đăng ký hoàn trả thiết bị tài sản, thông báo hoàn tất và có thể in biên bản nếu muốn.
+
+1.7.2.	Giao diện xác nhận hoàn trả:
+Mô tả giao diện:
+	Xác nhận hoàn trả là giao diện chỉ có nhân viên Phòng Hành chính – nhân sự xác nhận việc đăng ký hoàn trả thiết bị tài sản thành công. Trang có thể được chọn từ thanh Menu trong mục Hoàn trả TBTS, nhưng bị khóa đối với tài khoản nhân viên thuộc phòng ban khác.
+Sau khi biên bản giao được xác nhận, thông tin xác nhận được lưu vào dữ liệu giao TBTS, và người đăng ký có thể xem trạng thái biên bản được xác nhận trong mục Biên bản hoàn trả.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của mã biên bản giao, mã dự án, thiết bị, tình trạng cần tìm kiếm trong Xác nhận hoàn trả.
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Thanh lựa chọn trạng thái: Lọc các biên bản hoàn trả chưa xác nhận, chưa giao, đã xử lý.
+-	Từ ngày – đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để lọc thiết bị tài sản theo khoảng thời gian biên bản hoàn trả được đăng ký.
+-	Bộ lọc: Lọc theo trạng thái của biên bản giao “Đang yêu cầu”, “Đã nhận”, “Đã hủy”.
+-	Giao hàng loạt: Xác nhận yêu cầu của mọi biên bản chưa xác nhận và chuẩn bị giao.
+3.	Vùng danh sách các biên bản: 
+Danh sách các biên bản gồm:
+-	1: Cột Mã biên bản trả (BBT)
+-	2: Cột Mã dự án
+-	3: Cột Nhân viên đăng ký
+-	4: Cột Ngày hoàn trả
+-	5: Cột Thiết bị và số lượng bàn giao
+-	6: Cột Trạng thái
+-	7: Cột Thao tác:
+o	Nhấp vào Chưa xác nhận: thông báo xác nhận yêu cầu
+o	Nhấp vào Đánh giá: viết đánh giá tình trạng thiết bị. 
+o	Nhấp vào Đã nhận: xác nhận đã nhận thiết bị và xem chi tiết thông tin hoàn trả.
+o	Nhấp vào Đã xử lý: xem chi tiết thông tin hoàn trả.
+
+1.7.3.	Giao diện Biên bản hoàn trả
+1.7.3.1.	Người dùng là nhân viên
+Mô tả giao diện:
+	Giao diện Biên bản hoàn trả tài sản đối với người dùng là nhân viên là giao diện cho phép theo dõi trạng thái biên bản đã được gửi yêu cầu. Trang có thể được chọn từ thanh Menu trong mục Hoàn trả TBTS. 
+Trang được lấy dữ liệu từ dữ liệu giao TBTS.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của mã biên bản giao, mã dự án, thiết bị, tình trạng cần tìm kiếm trong Biên bản hoàn trả.
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Thanh lựa chọn trạng thái: Lọc các biên bản hoàn trả chưa xác nhận, chưa giao, đã xử lý.
+-	Từ ngày – đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để lọc thiết bị tài sản theo khoảng thời gian biên bản hoàn trả được đăng ký.
+3.	Vùng danh sách các biên bản: 
+Danh sách các biên bản gồm:
+-	Cột Mã biên bản giao
+-	Cột Mã dự án
+-	Cột Ngày hoàn trả
+-	Cột Thiết bị và số lượng bàn giao
+-	Cột Trạng thái
+-	Cột Thao tác:
+-	Nhấp vào In phiếu giao: xem trước Hình ảnh dưới dạng PNG.
+-	Nhấp vào Hủy yêu cầu: Gửi yêu cầu hủy giao.  
+-	Thao tác Sắp xếp: sắp xếp dữ liệu theo thứ tự từ bé đến lớn hoặc từ lớn đến bé theo thứ tự ưu tiên của ký tự đầu từ Con số đến Chữ cái.
+
+1.7.3.2.	Người dùng là Admin (Người quản trị hệ thống) hoặc nhân viên bộ phận Hành chính – nhân sự
+Mô tả giao diện:
+	Giao diện Biên bản hoàn trả tài sản đối với người dùng là người quản trị hệ thống) hoặc nhân viên bộ phận Hành chính – nhân sự, giao diện cho phép theo dõi tất cả biên bản đã được gửi yêu cầu. Trang có thể được chọn từ thanh Menu trong mục Hoàn trả TBTS.
+	Trang được lấy dữ liệu từ dữ liệu giao TBTS.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của mã biên bản giao, mã dự án, thiết bị, tình trạng cần tìm kiếm trong Biên bản hoàn trả.
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Thanh lựa chọn trạng thái: Lọc các biên bản hoàn trả chưa xác nhận, chưa giao, đã xử lý.
+-	Từ ngày – đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để lọc thiết bị tài sản theo khoảng thời gian biên bản hoàn trả được đăng ký.
+3.	Vùng danh sách các biên bản: 
+Danh sách các biên bản gồm:
+-	Cột Mã biên bản trả (BBT).
+-	Cột Mã dự án.
+-	Cột Nhân viên đăng ký.
+-	Cột Ngày hoàn trả.
+-	Cột Thiết bị và số lượng bàn giao.
+-	Cột Trạng thái.
+-	Cột Nhân viên giao.
+
+1.8.	Quản lý báo cáo thiết bị tài sản theo dự án:
+Mô tả giao diện:
+Báo cáo tài sản thiết bị theo dự án là giao diện để lãnh đạo xem báo cáo danh sách thiết bị theo từng dự án. Trang có thể được chọn từ thanh Menu trong mục Báo cáo. Chỉ có những tài khoản có thẩm quyền truy cập, xem và thao tác.
+Dữ liệu báo cáo hiện ra được lấy dữ liệu từ dữ liệu giao TBTS và dữ liệu TBTS.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của thiết bị, tình trạng cần tìm kiếm trong Danh sách thiết bị theo dự án.
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Loại báo cáo: Lựa chọn loại báo cáo thiết bị theo dự án (vẫn ở lại trang Danh sách thiết bị theo dự án), thiết bị theo tình trạng (di chuyển đến trang Danh sách thiết bị theo tình trạng), thiết bị hết khấu hao (di chuyển đến trang Danh sách thiết bị hết khấu hao).
+-	Thao tác tính năng In: Xuất và lưu bản báo cáo đang xem dưới dạng PDF vào máy.
+-	Tìm kiếm Mã dự án và Tên dự án: Nhập mã dự án, thao tác “kính lúp” bên cạnh, tên dự án và bản báo cáo sẽ hiện ra.
+-	Từ ngày và Đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để giới hạn thời gian giao và thời gian trả.
+3.	Vùng nội dung bản báo cáo:
+Nội dung bản báo cáo gồm:
+-	Mã báo cáo
+-	Tiêu đề báo cáo
+-	Ngày báo cáo
+-	Danh sách thiết bị
+-	Người xuất
+-	Danh sách thiết bị gồm:
+-	Cột Số thứ tự (STT)
+-	Cột Mã thiết bị
+-	Cột Tên thiết bị
+-	Cột Thời gian giao
+-	Cột Thời gian trả
+-	Cột Chi phí
+-	Cột Số lượng
+-	Cột Tình trạng
+-	Cột Trạng thái (“Đang sử dụng” nếu thiết bị đã giao, “Đã thu hồi” nếu thiết bị đã thu hồi)
+
+1.9.	Quản lý báo cáo thiết bị tài sản theo tình trạng:
+Mô tả giao diện:
+Báo cáo tài sản thiết bị theo tình trạng là giao diện để lãnh đạo xem báo cáo danh sách thiết bị theo từng tình trạng. Trang có thể được chọn từ thanh Menu trong mục Báo cáo. Chỉ có những tài khoản có thẩm quyền truy cập, xem và thao tác.
+Dữ liệu báo cáo hiện ra được lấy dữ liệu từ dữ liệu giao TBTS và dữ liệu TBTS.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của thiết bị, tình trạng cần tìm kiếm trong Danh sách thiết bị theo tình trạng
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Loại báo cáo: Lựa chọn loại báo cáo thiết bị theo dự án (di chuyển đến Danh sách thiết bị theo dự án), thiết bị theo tình trạng (ở lại Danh sách thiết bị theo tình trạng), thiết bị hết khấu hao (di chuyển đến trang Danh sách thiết bị hết khấu hao).
+-	Thao tác tính năng In: Xuất và lưu bản báo cáo đang xem dưới dạng PDF vào máy.
+-	Chọn Tình trạng: Chọn loại tình trạng (Mới/Tốt/Hư hỏng), thao tác tính năng “kính lúp” bên cạnh, bản báo cáo sẽ hiện ra.
+-	Từ ngày và Đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để giới hạn thời gian mua.
+3.	Vùng nội dung bản báo cáo:
+Nội dung bản báo cáo gồm:
+-	Mã báo cáo
+-	Tiêu đề báo cáo
+-	Ngày báo cáo
+-	Danh sách thiết bị
+-	Người xuất
+-	Danh sách thiết bị gồm:
+-	Cột Số thứ tự (STT)
+-	Cột Mã thiết bị
+-	Cột Tên thiết bị
+-	Cột Chi phí
+-	Cột Thời gian mua
+-	Cột Ngày hết khấu hao
+-	Cột Số lượng
+
+1.10.	Quản lý báo cáo thiết bị tài sản hết giá trị khấu hao
+Mô tả giao diện:
+Báo cáo tài sản thiết bị hết khấu hao là giao diện để lãnh đạo xem báo cáo danh sách thiết bị đã hết khấu hao. Trang có thể được chọn từ thanh Menu trong mục Báo cáo. Chỉ có những tài khoản có thẩm quyền truy cập, xem và thao tác.
+Dữ liệu báo cáo hiện ra được lấy dữ liệu từ dữ liệu TBTS.
+Giao diện gồm:
+1.	Khung tìm kiếm:
+Nhập từ khóa của thiết bị, tình trạng cần tìm kiếm trong Danh sách thiết bị hết khấu hao.
+2.	Vùng thao tác trong trang Danh sách thiết bị theo dự án:
+Vùng thao tác gồm:
+-	Loại báo cáo: Lựa chọn loại báo cáo thiết bị theo dự án (di chuyển đến Danh sách thiết bị theo dự án), thiết bị theo tình trạng (di chuyển đến Danh sách thiết bị theo tình trạng), thiết bị hết khấu hao (ở lại trang Danh sách thiết bị hết khấu hao).
+-	Thao tác tính năng In: Xuất và lưu bản báo cáo đang xem dưới dạng PDF vào máy.
+-	Từ ngày - Đến ngày: Điền ngày, tháng, năm theo định dạng là DD/MM/YYYY hoặc thao tác trong tính năng chọn lịch để giới hạn thời gian mua.
+3.	Vùng nội dung bản báo cáo:
+Nội dung bản báo cáo gồm:
+-	Mã báo cáo
+-	Tiêu đề báo cáo
+-	Ngày báo cáo
+-	Danh sách thiết bị
+-	Người xuất
+-	Danh sách thiết bị gồm:
+-	Cột Số thứ tự (STT)
+-	Cột Mã thiết bị
+-	Cột Tên thiết bị
+-	Cột Chi phí
+-	Cột Thời gian mua
+-	Cột Ngày hết khấu hao
+-	Cột Số lượng
+-	Cột Tình trạng thiết bị
